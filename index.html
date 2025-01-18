@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VideoServer</title>
+  <link rel="icon" href="#@fav" type="image/x-icon">
+  <!-- Latest Video.js CSS -->
+  <link href="https://vjs.zencdn.net/7.20.1/video-js.css" rel="stylesheet">
+
+  <!-- Video.js JavaScript -->
+  <script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
+
+  <style>
+    /* You can add custom styles for the video player here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+    }
+    video {
+      border: 2px solid #ddd;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>#@movie</h1>
+
+  <!-- Video.js Player -->
+  <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360"
+    autoplay loop muted>
+    <!-- Source for video -->
+    <source src="#@link" type="video/mp4">
+
+    <!-- Captions (optional) -->
+    <track kind="subtitles" src="subtitles_en.vtt" srclang="en" label="English">
+    
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video.
+    </p>
+  </video>
+
+  <!-- Initialize Video.js with all options enabled -->
+  <script>
+    var player = videojs('my-video', {
+      controls: true,       // Enable controls
+      autoplay: true,       // Enable autoplay
+      loop: true,           // Enable loop
+      muted: true,          // Enable mute by default
+      preload: 'auto',      // Preload video automatically
+      fluid: true,          // Make the player responsive
+      playbackRates: [0.5, 1, 1.5, 2] // Enable playback speed control
+    });
+  </script>
+
+</body>
+</html>
