@@ -9,8 +9,8 @@ const htmls = require('./html');
 
 
 //place your folder paths for movies abd series.@fstr=path for films folder && @Sstr=path for series.
-const Fstr="E:/Arjun_New_backup/volume_E/True_Detective_Season_1/";
-const Sstr="E:/Arjun_New_backup/volume_F/[Anime Time] Attack On Titan (Complete Collection) (S01-S04+OVA+Movies+Junior High) [BD] [Dual Audio][1080p][HEVC 10bit x265][AAC][Eng Sub]"
+const Fstr="E:/Arjun_New_backup/volume_E/Movies/";
+const Sstr="E:/Arjun_New_backup/volume_F/Series/";
 //use Fstr for films & Sstr for series 
 
 
